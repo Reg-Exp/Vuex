@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -37,13 +38,80 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/prettier"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "indent": [
+        "off",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "for-direction": "error",
+      "no-compare-neg-zero": "error",
+      "no-cond-assign": "error",
+      "no-constant-condition": "error",
+      "no-debugger": "off",
+      "no-dupe-args": "error",
+      "no-dupe-keys": "error",
+      "no-duplicate-case": "error",
+      "no-empty": "error",
+      "no-ex-assign": "error",
+      "no-extra-boolean-cast": "error",
+      "no-extra-semi": "error",
+      "no-func-assign": "error",
+      "no-obj-calls": "error",
+      "no-sparse-arrays": "error",
+      "no-template-curly-in-string": "error",
+      "no-unreachable": "error",
+      "curly": [
+        "error",
+        "all"
+      ],
+      "consistent-return": "error",
+      "eqeqeq": [
+        "error",
+        "smart"
+      ],
+      "no-alert": "error",
+      "no-caller": "error",
+      "no-else-return": "error",
+      "no-empty-function": "error",
+      "no-eq-null": "error",
+      "no-extend-native": "error",
+      "no-floating-decimal": "error",
+      "no-global-assign": "error",
+      "no-redeclare": "error",
+      "no-self-assign": "error",
+      "no-self-compare": "error",
+      "no-delete-var": "error",
+      "no-shadow": "off",
+      "no-undef": "error",
+      "no-undef-init": "error",
+      "no-unused-vars": "error",
+      "no-use-before-define": "error",
+      "array-bracket-spacing": "error",
+      "camelcase": "warn",
+      "no-const-assign": "error",
+      "no-dupe-class-members": "error",
+      "no-duplicate-imports": "error",
+      "no-new-symbol": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-template": "error",
+      "no-mixed-spaces-and-tabs": "off",
+      "linebreak-style": "off"
+    }
   },
   "browserslist": [
     "> 1%",
